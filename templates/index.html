@@ -1,14 +1,9 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-</head>
+{% block content %}
+<p>區塊</p>
+{% endblock %}
 
-<body>
-    <h1>Hello World</h1>
-    <p>Flask</p>
-</body>
-
-</html>
+{% block content2 %}
+<h3>區塊2</h3>
+{% endblock %}

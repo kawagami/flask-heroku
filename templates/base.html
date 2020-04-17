@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>This is title</title>
+    {% endif %}
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+
+    {% for i in data %}
+    <p>{{ i }}</p>
+    {% endfor %}
+
+    {% block content %}
+    {% endblock %}
+    
+    {% block content2 %}
+    {% endblock %}
+</body>
+
+</html>
